@@ -49,7 +49,10 @@
 
 @media (max-width: 992px) { 
 
-
+    .footer_backgroud{
+        height: 140px;
+        bottom: 25px;
+    }
     .footer_logo img{  
         width: 145px !important;
         padding: 1rem;
@@ -71,7 +74,10 @@
 
  @media (max-width: 768px) { 
 
-
+    .footer_backgroud{
+        height: 130px;
+        bottom: 20px;
+    }
     .footer_logo img{  
         width: 120px !important;
         padding: 1rem;
@@ -96,7 +102,10 @@
 
  @media (max-width: 576px) { 
 
-
+    .footer_backgroud{
+        height: 120px;
+        bottom: 20px;
+    }
     .footer_logo img{  
         width: 120px !important;
         padding: 1rem;
