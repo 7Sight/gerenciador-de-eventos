@@ -1,13 +1,24 @@
 .footer {
     color: darkgray!important; 
-
 }
+
+
+
+.footer_backgroud {
+    background-color: #004085 !important;
+    width: 100%;
+    height: 165px;
+    position: fixed;
+    bottom: 40px;
+}
+
 //gambiarra criada para ajusta o tamanho da logo da unieuro
 // irei gerar outra logo com o tamanho correto para colocar no footer.
 .footer_logo img{  
     width: 180px;
     padding: 1rem;
 }
+
 
 .footer_icon{
     text-align: center !important;
@@ -17,20 +28,14 @@
     
 }
 
-.footer_text_color{
+
+.footer_text--color{
     color: white !important;
     text-align: right !important;
 }
 
-
-.footer_backgroud {
-    background-color: #004085 !important;
-    width: 100%;
-    height: 165px;
-    position: fixed;
-    bottom: 40px;
-    
-    
+.footer_text--tam{
+    font-size: 26px !important;
 }
 
 .footer_desenvolvido{
@@ -41,3 +46,25 @@
     padding: 10px;
 }
 
+
+@media (max-width: 992px) { 
+
+
+    .footer_logo img{  
+        width: 145px !important;
+        padding: 1rem;
+    }
+
+    .footer_icon{
+        text-align: center !important;
+    }.footer_icon img{
+        width: 45px !important;
+        padding: 0.5rem !important;
+        
+    }
+    .footer_text--tamt{
+        font-size: 18px !important;
+    }
+   
+
+ }
