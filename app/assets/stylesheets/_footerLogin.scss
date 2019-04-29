@@ -1,3 +1,129 @@
 .footer {
     color: darkgray!important; 
 }
+
+
+
+.footer_backgroud {
+    background-color: #004085 !important;
+    width: 100%;
+    height: 165px;
+    position: fixed;
+    bottom: 40px;
+}
+
+//gambiarra criada para ajusta o tamanho da logo da unieuro
+// irei gerar outra logo com o tamanho correto para colocar no footer.
+.footer_logo img{  
+    width: 180px;
+    padding: 1rem;
+}
+
+
+.footer_icon{
+    text-align: center !important;
+} img{
+    width: 60px;
+    padding: 0.5rem;
+    
+}
+
+
+.footer_text--color{
+    color: white !important;
+    text-align: right !important;
+}
+
+.footer_text--tam{
+    font-size: 26px !important;
+}
+
+.footer_desenvolvido{
+    background: white;
+    color: black;
+    text-align: center;
+    height: 40px;
+    padding: 10px;
+}
+
+
+@media (max-width: 992px) { 
+
+    .footer_backgroud{
+        height: 140px;
+        bottom: 25px;
+    }
+    .footer_logo img{  
+        width: 145px !important;
+        padding: 1rem;
+    }
+
+    .footer_icon{
+        text-align: center !important;
+    }.footer_icon img{
+        width: 45px !important;
+        padding: 0.5rem !important;
+        
+    }
+    .footer_text--tamt{
+        font-size: 18px !important;
+    }
+   
+
+ }
+
+ @media (max-width: 768px) { 
+
+    .footer_backgroud{
+        height: 130px;
+        bottom: 20px;
+    }
+    .footer_logo img{  
+        width: 120px !important;
+        padding: 1rem;
+    }
+
+    .footer_icon{
+        text-align: center !important;
+    }.footer_icon img{
+        width: 28px !important;
+        padding: 0.1rem !important;
+        
+    }
+    .footer_text--tamt{
+        font-size: 14px !important;
+    }
+    .footer_text--tamn{
+        font-size: 24px !important;
+    }
+   
+
+ }
+
+ @media (max-width: 576px) { 
+
+    .footer_backgroud{
+        height: 120px;
+        bottom: 20px;
+    }
+    .footer_logo img{  
+        width: 120px !important;
+        padding: 1rem;
+    }
+
+    .footer_icon{
+        text-align: center !important;
+    }.footer_icon img{
+        width: 25px !important;
+        padding: 0.1rem !important;
+        
+    }
+    .footer_text--tamt{
+        font-size: 12px !important;
+    }
+    .footer_text--tamn{
+        font-size: 20px !important;
+    }
+   
+
+ }
