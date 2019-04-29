@@ -1,3 +1,11 @@
-.navbar {
-    color: darkgreen!important;
+.navbar--color {
+    color: white;
+    background-color: darkblue!important;
+    box-shadow: -2px 2px 3px #00000094;
+}
+.navbar__img{  
+    width: 75px;
+}
+.navbar__size{
+    width: 75px;   
 }
