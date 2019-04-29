@@ -1,11 +1,21 @@
 <nav class="navbar navbar--color navbar-expand">
-	 <div class="ml-5"> <a class="" href="#"> <%= image_tag "Logo_unieuro.png",class:"navbar__img"  %> </a> </div>
-    <div> <span class ="pl-4"> Gerenciador de Eventos </span> </div>
+	 <div class="ml-5"> 
+      <a class="" href="#"> <%= image_tag "Logo_unieuro.png",class:"navbar__img"  %> </a> 
+   </div>
+    <div>
+      <span class ="pl-4 navbar__Title">Gerenciador de Eventos</span>
+    </div>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0"> 
     </ul>
       <div class="pr-5">
-      <button class="form-inline my-2 my-lg-0 	btn btn-outline-light my-2 my-sm-0" type="submit">Sair</button>
-  </div>
+        <button class="form-inline my-2 my-lg-0	btn btn-outline-light my-2 my-sm-0 navbar__Button" type="submit">USER 
+          <a class="fa fa-user fa-lg navbar__fIcon"></a>
+        </button>
+        <p class="navbar__LineSeparator">|</p>
+        <button class="form-inline my-2 my-lg-0	btn btn-outline-light my-2 my-sm-0 navbar__Button" type="submit">Sair
+          <a class="fa fa-sign-out fa-lg navbar__fIcon"></a>
+        </button>
+      </div>
     </div>
 </nav>
