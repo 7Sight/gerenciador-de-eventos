@@ -1,28 +1,29 @@
-<footer class="footer_backgroud">
-<div class="container">
-    <div class="row align-items-center">
-        <div class="col footer_logo">
-        <%= image_tag "logounieuro.png" %> </a>
+<section id="footer_registerEvent">
+    <footer class="footer_backgroud">
+        <div class="container footer__container">
+            <div class="flex-item footer__itemContainer">
+                <%= image_tag "unieuro_branca.svg", class:"footer__unieuroLogo" %>
+            </div>
+
+            <div class="flex-item footer__itemContainer">
+                <a href="https://www.facebook.com/7sightjr/" target="_blank">
+                    <%= image_tag "facebook.svg",  class:"footer__iconSize" %>
+                </a>
+                <a href="https://twitter.com/7sightJr" target="_blank">
+                    <%= image_tag "twitter.svg",  class:"footer__iconSize" %>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <%= image_tag "youtube.svg", class:"footer__iconSize" %>
+                </a>
+                <a href="https://www.instagram.com/7sightjr/" target="_blank">
+                    <%= image_tag "instagram.svg", class:"footer__iconSize" %>
+                </a>
+            </div> 
+
+            <div class="flex-item footer__itemContainer">
+                <h5 class="footer_text--tamt">Central de Atendimento</h5>
+                <h2 class="footer_text--tamn">4020 7525</h2>
+            </div>
         </div>
-        
-        <div class="col footer_icon">
-            <a href="https://www.facebook.com/7sightjr/" target="_blank">
-                <%= image_tag "facebook.svg",  :style => "width: 65px!important" %>
-            </a>
-            <a href="https://twitter.com/7sightJr" target="_blank">
-                <%= image_tag "twitter.svg",  :style => "width: 65px!important" %>
-            </a>
-            <a href="https://www.youtube.com/" target="_blank">
-                <%= image_tag "youtube.svg" %>
-            </a>
-            <a href="https://www.instagram.com/7sightjr/" target="_blank">
-                <%= image_tag "instagram.svg" %>
-            </a>
-        </div>
-        <div class="col footer_text--color">
-            <h5 class="footer_text--tamt">Central de Atendimento</h5>
-            <h2 class="footer_text--tamn">4020 7525</h2>
-        </div>
-    </div>
-</div>
-</footer>
+    </footer>
+</section>

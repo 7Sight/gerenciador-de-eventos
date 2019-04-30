@@ -1,21 +1,33 @@
-<nav class="navbar navbar--color navbar-expand">
-	 <div class="ml-5"> 
-      <a class="" href="#"> <%= image_tag "Logo_unieuro.png",class:"navbar__img"  %> </a> 
-   </div>
-    <div>
-      <span class ="pl-4 navbar__Title">Gerenciador de Eventos</span>
-    </div>
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0"> 
-    </ul>
-      <div class="pr-5">
-        <button class="form-inline my-2 my-lg-0	btn btn-outline-light my-2 my-sm-0 navbar__Button" type="submit">USER 
-          <a class="fa fa-user fa-lg navbar__fIcon"></a>
-        </button>
-        <p class="navbar__LineSeparator">|</p>
-        <button class="form-inline my-2 my-lg-0	btn btn-outline-light my-2 my-sm-0 navbar__Button" type="submit">Sair
-          <a class="fa fa-sign-out fa-lg navbar__fIcon"></a>
-        </button>
+<section id="navbar_RegisterEvent">
+  <nav class="navbar fixed-top navbar-expand-lg container-fluid navbar--color" id="nav">
+    <div class="container">
+      <a class="navbar-brand h2 mb-0" href="#">
+        <%= image_tag "Logo_unieuro.png", class:"navbar__img"%>
+        <span class ="navbar__Title">Eventos</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite" aria-controls="navbarSite" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-navicon"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSite">
+        <ul class="navbar-nav ml-auto navbar__Responsive">
+          <li class="nav-item navbar__Resposive-Item1">
+            <button class="form-inline my-2 my-lg-0	btn btn-outline-light my-2 my-sm-0 navbar__Button" type="submit">User 
+              <a class="fa fa-user fa-lg navbar__fIcon"></a>
+            </button>
+          </li>
+
+          <p class="navbar__LineSeparator d-none d-xl-block d-lg-block">|</p>
+
+          <li class="nav-item navbar__Resposive-Item2">
+            <button class="form-inline my-2 my-lg-0	btn btn-outline-light my-2 my-sm-0 navbar__Button" type="submit">Sair
+              <a class="fa fa-sign-out fa-lg navbar__fIcon"></a>
+            </button>
+          </li>     
+        </ul>
       </div>
     </div>
-</nav>
+  </nav>
+</section>
+      
