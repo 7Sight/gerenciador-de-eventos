@@ -1,14 +1,146 @@
+/* ESTILOS GERAIS*/
+
+
+
+
+/* Abre Media query Desktop*/
+@media only screen and (min-width: 768px) {
+
 .form {
-    color: darkblue!important;
+    color: #004085;
+    background: #EFEBEB;
+    font-family: Arial;
+}
+
+.form h1 {
+    font-family: Montserrat;
     font-weight: bold;
+    font-size: 14;   
+}
+.form input {
+    background: #EFEBEB;
+    color: black;
+}
+
+.linha {
+   padding-bottom: 20px; 
+}
+
+.input__ministrante {
+    width: 50%;
+    float: left;
+    padding-right: 40px;
+}
+
+.input__quantidadehoras {
+    width: 25%;
+    float: left;
+    padding-right: 40px;
+}
+
+.input__numerovagas {
+    width: 25%;
+    float: left;
+}
+
+.input__local {
+    width: 50%;
+    float: left;
+    padding-right: 40px;
+}
+
+.input__data {
+    width: 25%;
+    float: left;
+    padding-right: 40px;
+}
+
+.input__hora {
+    width: 25%;
+    float: left;
+}
+
+.form textarea {
+    background-color: #EFEBEB;
+    resize: none;
+}
+
+.container_form {
+    background: #EFEBEB;
 }
 
 label {
-    color: darkblue!important;
+    color: #004085;
     font-weight: bold;
+}
+
+.btn__enviar {
+    width: 25%;
+    float: right;
 }
 
 .enviar {
     color: white;
-    background: darkblue!important;
+    background: #004085;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 8;
 }
+
+.container_form:before {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 4px;
+	background: #004085;
+	margin: 40px auto 20px auto;
+}
+
+
+
+
+} /* Fecha Media query Desktop*/
+
+
+
+/* Abre Media query Mobile*/
+@media only screen and (max-width: 767px)  {
+
+
+.input__ministrante {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.input__quantidadehoras {
+    width: 100%;
+    float: none;
+    padding-right: 40px;
+}
+
+.input__numerovagas {
+    width: 100%;
+    float: none;
+}
+
+.input__local {
+    width: 100%;
+    float: none;
+    padding-right: 40px;
+}
+
+.input__data {
+    width: 100%;
+    float: none;
+    padding-right: 40px;
+}
+
+.input__hora {
+    width: 100%;
+    float: none;
+}
+
+
+
+
+} /* Fecha Media query Mobile*/
