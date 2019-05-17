@@ -7,12 +7,19 @@
     
 }
 
+.container_footer{
+    width: 100%;
+    padding-left: 10% ;
+    padding-right: 10% ;
+}
+
 .footer__unieuroLogo {
     width: 140px!important;
 }
 
 .footer_text_t, .footer_text_m {
     text-align: right !important;
+    
 }
 
 .footer_icons{
@@ -57,7 +64,7 @@
 
  @media (max-width: 992px) { 
     .footer__iconSize{
-        width: 35px !important;
+        width: 30px !important;
     }.footer__unieuroLogo {
         width: 115px!important;
         padding: 3px;
@@ -70,45 +77,51 @@
 
  @media (max-width: 768px) { 
     .footer__iconSize{
-        width: 20px !important;
+        width: 25px !important;
+        margin: 1px;
     }.footer__unieuroLogo {
-        width: 100px!important;
+        width: 90px!important;
         padding: 2px;
     }.footer_text_t{
-        font-size: 10px;
+        font-size: 13px;
     }.footer_text_m{
-        font-size: 20px;
+        font-size: 23px;
     }
 }
 
 @media (max-width: 576px) { 
+    .col{
+        padding-left: 05px;
+        padding-right: 05px;
+    }
     .footer__iconSize{
-        width: 15px !important;
+        width: 17px !important;
         margin: 0.5px;
     }.footer__unieuroLogo {
-        width: 40px!important;
+        width: 75px!important;
         padding: 1px;
     }.footer_text_t{
-        font-size: 8px;
-        padding-top: 3px;
+        font-size: 10px;
     }.footer_text_m{
-        margin-top: -2px;
-        font-size: 12px;
+        font-size: 15px;
     }
 }
 
-@media (max-width: 320px) { 
+@media (max-width: 360px) {
+    
+    .col{
+        padding-left: 05px;
+        padding-right: 05px;
+    } 
     .footer__iconSize{
         width: 13px !important;
-        margin: 0.5px;
+        
     }.footer__unieuroLogo {
-        width: 40px!important;
-        padding: 1px;
+        width: 65px!important;
+        
     }.footer_text_t{
-        font-size: 6px;
-        padding-top: 3px;
+        font-size: 8px;
     }.footer_text_m{
-        margin-top: -2px;
-        font-size: 10px;
+        font-size: 15px;
     }
 }
