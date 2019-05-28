@@ -1,72 +1,29 @@
 /* ESTILOS GERAIS*/
 
 
-
-
-/* Abre Media query Desktop*/
-@media only screen and (min-width: 768px) {
-
 .form {
     color: #004085;
-    background: #EFEBEB;
+    background: #f9f9f9;
     font-family: Arial;
 }
 
 .form h1 {
-    font-family: Montserrat;
     font-weight: bold;
     font-size: 14;   
 }
 .form input {
-    background: #EFEBEB;
+    background: #f9f9f9;
     color: black;
 }
 
-.linha {
-   padding-bottom: 20px; 
-}
-
-.input__ministrante {
-    width: 50%;
-    float: left;
-    padding-right: 40px;
-}
-
-.input__quantidadehoras {
-    width: 25%;
-    float: left;
-    padding-right: 40px;
-}
-
-.input__numerovagas {
-    width: 25%;
-    float: left;
-}
-
-.input__local {
-    width: 50%;
-    float: left;
-    padding-right: 40px;
-}
-
-.input__data {
-    width: 25%;
-    float: left;
-    padding-right: 40px;
-}
-
-.input__hora {
-    width: 25%;
-    float: left;
-}
-
 .form textarea {
-    background-color: #EFEBEB;
+    background-color: #f9f9f9;
     resize: none;
 }
 
 .container_form {
-    background: #EFEBEB;
+    background: #f9f9f9;
+    margin-top: 50px;
 }
 
 label {
@@ -93,29 +50,160 @@ label {
 	width: 100px;
 	height: 4px;
 	background: #004085;
-	margin: 40px auto 20px auto;
+	margin: 120px auto 0px auto;
+}
+
+
+@media only screen and (min-width: 1201px) and (max-width: 1800px) {
+    .linha {
+        padding-bottom: 20px; 
+    }
+
+    .input__ministrante {
+        width: 50%;
+        float: left;
+        padding-right: 40px;
+    }
+    
+    .input__quantidadehoras {
+        width: 25%;
+        float: left;
+        padding-right: 40px;
+    }
+    
+    .input__numerovagas {
+        width: 25%;
+        float: left;
+    }
+    
+    .input__local {
+        width: 50%;
+        float: left;
+        padding-right: 40px;
+    }
+    
+    .input__data {
+        width: 25%;
+        float: left;
+        padding-right: 40px;
+    }
+    
+    .input__hora {
+        width: 25%;
+        float: left;
+    }
+
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .linha {
+        padding-bottom: 20px; 
+     }
+
+     .input__ministrante {
+        width: 50%;
+        float: left;
+        padding-right: 40px;
+    }
+    
+    .input__quantidadehoras {
+        width: 25%;
+        float: left;
+        padding-right: 40px;
+    }
+    
+    .input__numerovagas {
+        width: 25%;
+        float: left;
+    }
+    
+    .input__local {
+        width: 50%;
+        float: left;
+        padding-right: 40px;
+    }
+    
+    .input__data {
+        width: 25%;
+        float: left;
+        padding-right: 40px;
+    }
+    
+    .input__hora {
+        width: 25%;
+        float: left;
+    }
+
 }
 
 
 
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .linha {
+        margin-bottom: 20px; 
+     }
 
-} /* Fecha Media query Desktop*/
+
+     .input__ministrante {
+        width: 40%;
+        float: left;
+        padding-right: 40px;
+    }
+    
+    .input__quantidadehoras {
+        width: 30%;
+        float: left;
+        padding-right: 40px;
+    }
+    
+    .input__numerovagas {
+        width: 30%;
+        float: left;
+    }
+    
+    .input__local {
+        width: 40%;
+        float: left;
+        padding-right: 40px;
+    }
+    
+    .input__data {
+        width: 30%;
+        float: left;
+        padding-right: 40px;
+    }
+    
+    .input__hora {
+        width: 30%;
+        float: left;
+    }
+
+}
+
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+
+}
 
 
 
 /* Abre Media query Mobile*/
-@media only screen and (max-width: 767px)  {
+@media only screen and (max-width: 576px)  {
 
+
+.input__nomeevento {
+    width: 100%;
+}
 
 .input__ministrante {
     width: 100%;
-    padding-right: 40px;
+    padding-right: 0;
 }
 
 .input__quantidadehoras {
     width: 100%;
     float: none;
-    padding-right: 40px;
+    padding-right: 0;
 }
 
 .input__numerovagas {
@@ -126,13 +214,13 @@ label {
 .input__local {
     width: 100%;
     float: none;
-    padding-right: 40px;
+    padding-right: 0;
 }
 
 .input__data {
     width: 100%;
     float: none;
-    padding-right: 40px;
+    padding-right: 0;
 }
 
 .input__hora {
@@ -140,6 +228,9 @@ label {
     float: none;
 }
 
+.enviar {
+    font-size: 12px;
+}
 
 
 

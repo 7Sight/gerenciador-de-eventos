@@ -1,26 +1,20 @@
-.footer_backgroud {
+.footer__backgroud {
     background-color: #004085 !important;
-    width: 100vw;
-    bottom: 40px;
-    position: sticky;
     color: white !important;
-    
 }
 
-.container_footer{
-    width: 100%;
-    padding-left: 10% ;
-    padding-right: 10% ;
+.footer__container{
+    display: flex!important;
+    flex-direction: row!important;
+    flex-wrap: nowrap!important;
+    justify-content: space-between!important;
+    align-items: center!important;
 }
 
 .footer__unieuroLogo {
     width: 140px!important;
 }
 
-.footer_text_t, .footer_text_m {
-    text-align: right !important;
-    
-}
 
 .footer_icons{
     text-align: center !important;
@@ -32,96 +26,99 @@
     
 }
 
+.footer__textbox{
+    padding-left: 5px;
+}
 
+.footer__text {
+    text-align: right !important;
+    word-wrap: break-word;
+}
 
-
-
-@media (max-width: 1400px) { 
-    .footer__iconSize{
-        width: 55px !important;
-    }.footer__unieuroLogo {
-        width: 140px!important;
-        padding: 5px;
-    }.footer_text_t{
-        font-size: 18px;
-    }.footer_text_m{
-        font-size: 32px;
+@media (max-width: 768px){
+    .footer__container{
+        flex-direction: column!important;
     }
- }
 
- @media (max-width: 1200px) { 
     .footer__iconSize{
+        margin: 5px!important;   
+        width: 50px !important;
+        padding-bottom: 5px!important;
+    }
+
+    .footer__text{
+        text-align: center!important;
+    }
+
+}
+
+
+
+
+/*
+@media (max-width: 768px){
+    .footer__unieuroLogo{
+        width: 100px !important;
+    }
+
+    .footer__iconSize{
+        margin: -0.5px!important;
         width: 45px !important;
-    }.footer__unieuroLogo {
-        width: 125px!important;
-        padding: 4px;
-    }.footer_text_t{
-        font-size: 16px;
-    }.footer_text_m{
-        font-size: 28px;
     }
- }
 
- @media (max-width: 992px) { 
+    .footer__text{
+        font-size: 1.0rem!important;
+    }
+
+    .footer__text--size{
+        font-size: 1.5rem!important;
+    }
+}
+
+@media (max-width: 360px){
+    .mobile{
+        margin-left: 50px!important;
+    }
+
+    .footer__unieuroLogo{
+        width: 85px !important;
+    }
+
     .footer__iconSize{
+        margin: 1.5px!important;
         width: 30px !important;
-    }.footer__unieuroLogo {
-        width: 115px!important;
-        padding: 3px;
-    }.footer_text_t{
-        font-size: 14px;
-    }.footer_text_m{
-        font-size: 24px;
     }
- }
 
- @media (max-width: 768px) { 
-    .footer__iconSize{
-        width: 25px !important;
-        margin: 1px;
-    }.footer__unieuroLogo {
-        width: 90px!important;
-        padding: 2px;
-    }.footer_text_t{
-        font-size: 13px;
-    }.footer_text_m{
-        font-size: 23px;
+    .footer__text{
+        font-size: 0.8rem!important;
+    }
+
+    .footer__text--size{
+        font-size: 1rem!important;
     }
 }
 
-@media (max-width: 576px) { 
-    .col{
-        padding-left: 05px;
-        padding-right: 05px;
+@media (max-width: 320px){
+    .mobile{
+        margin-left: 10px!important;
     }
+
+    .footer__unieuroLogo{
+        width: 90px !important;
+    }
+
     .footer__iconSize{
-        width: 17px !important;
-        margin: 0.5px;
-    }.footer__unieuroLogo {
-        width: 75px!important;
-        padding: 1px;
-    }.footer_text_t{
-        font-size: 10px;
-    }.footer_text_m{
-        font-size: 15px;
+        margin: 5px!important;
+        width: 30px !important;
+    }
+
+    .footer__text{
+        font-size: 0.9rem!important;
+    }
+
+    .footer__text--size{
+        font-size: 1.1rem!important;
     }
 }
 
-@media (max-width: 360px) {
-    
-    .col{
-        padding-left: 05px;
-        padding-right: 05px;
-    } 
-    .footer__iconSize{
-        width: 13px !important;
-        
-    }.footer__unieuroLogo {
-        width: 65px!important;
-        
-    }.footer_text_t{
-        font-size: 8px;
-    }.footer_text_m{
-        font-size: 15px;
-    }
-}
+*/
