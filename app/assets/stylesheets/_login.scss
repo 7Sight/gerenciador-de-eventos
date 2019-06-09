@@ -7,12 +7,16 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
     .nav--color{
-        background-color: #120a8f!important;
+        background-color:#004085!important;
         height: 80px;
+        justify-content: flex-end;
     }
 
     .nav__font{
         color:#ffffff!important;
+        font-weight: bold !important;
+        font-size: 1.3em !important;
+        text-align: right!important;
     }
 
     .container__flex{
@@ -24,31 +28,26 @@ input[type=number]::-webkit-outer-spin-button {
         background-color: #ffffff;
         margin-top: 9em;
         margin-bottom: 5em;
-        padding-bottom: 50px;
-        opacity: 0.8;
+        padding-bottom: 25px;
+ 
+        
     }
 
-    .container__flex:hover{
-        opacity: 1.0;
-    }
-    
     @media (max-width: 576px) {
         .container__flex{
-          width: 98%;
-          opacity: 1.0;
+            margin-top: 30px;
+            width: 90%;
+         }
+        .nav--color{
+            justify-content: center!important;
          }
       }
 
 .imageLogin{
     height: 200px;
     width: 100%;
+    margin: 15px 0px 25px 0px;
 }
-
-    .input--radios{
-        border-radius: 10%;
-        opacity: 1.0!important;
-    }
-
     .form__text{
         color:black;
     }
@@ -62,7 +61,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .btn--color{
-        background-color: #120a8f;
+        background-color:#387AD4;
     }
 
 .footer {
@@ -81,6 +80,6 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0px;
   }
   .footer__linha {
-    background-color: #120a8f;
+    background-color:#387AD4;
     height: 4px;
   }
