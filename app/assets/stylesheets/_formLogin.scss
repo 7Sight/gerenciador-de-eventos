@@ -1,237 +1,28 @@
-/* ESTILOS GERAIS*/
-
-
-.form {
-    color: #004085;
-    background: #f9f9f9;
-    font-family: Arial;
-}
-
-.form h1 {
-    font-weight: bold;
-    font-size: 14;   
-}
-.form input {
-    background: #f9f9f9;
-    color: black;
-}
-
-.form textarea {
-    background-color: #f9f9f9;
+.form__textArea{
     resize: none;
 }
 
-.container_form {
-    background: #f9f9f9;
-    margin-top: 50px;
+.form__title{
+    border-top: 15px solid;
+    border-color: #004085;
 }
 
-label {
+.event__line{
+    width: 100px;
+    border-top: 6px solid #004085!important;
     color: #004085;
-    font-weight: bold;
 }
 
-.btn__enviar {
-    width: 25%;
-    float: right;
+.form__text{
+    color: #004085;
 }
 
-.enviar {
-    color: white;
+.form__button{
+    color: white!important;
     background: #004085;
-    font-family: Arial;
-    font-weight: bold;
-    font-size: 8;
+    border: none!important;
 }
 
-.container_form:before {
-	content: "";
-	display: block;
-	width: 100px;
-	height: 4px;
-	background: #004085;
-	margin: 120px auto 0px auto;
+#event__formSection{
+    padding-top: 50px;
 }
-
-
-@media only screen and (min-width: 1201px) and (max-width: 1800px) {
-    .linha {
-        padding-bottom: 20px; 
-    }
-
-    .input__ministrante {
-        width: 50%;
-        float: left;
-        padding-right: 40px;
-    }
-    
-    .input__quantidadehoras {
-        width: 25%;
-        float: left;
-        padding-right: 40px;
-    }
-    
-    .input__numerovagas {
-        width: 25%;
-        float: left;
-    }
-    
-    .input__local {
-        width: 50%;
-        float: left;
-        padding-right: 40px;
-    }
-    
-    .input__data {
-        width: 25%;
-        float: left;
-        padding-right: 40px;
-    }
-    
-    .input__hora {
-        width: 25%;
-        float: left;
-    }
-
-}
-
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-    .linha {
-        padding-bottom: 20px; 
-     }
-
-     .input__ministrante {
-        width: 50%;
-        float: left;
-        padding-right: 40px;
-    }
-    
-    .input__quantidadehoras {
-        width: 25%;
-        float: left;
-        padding-right: 40px;
-    }
-    
-    .input__numerovagas {
-        width: 25%;
-        float: left;
-    }
-    
-    .input__local {
-        width: 50%;
-        float: left;
-        padding-right: 40px;
-    }
-    
-    .input__data {
-        width: 25%;
-        float: left;
-        padding-right: 40px;
-    }
-    
-    .input__hora {
-        width: 25%;
-        float: left;
-    }
-
-}
-
-
-
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-    .linha {
-        margin-bottom: 20px; 
-     }
-
-
-     .input__ministrante {
-        width: 40%;
-        float: left;
-        padding-right: 40px;
-    }
-    
-    .input__quantidadehoras {
-        width: 30%;
-        float: left;
-        padding-right: 40px;
-    }
-    
-    .input__numerovagas {
-        width: 30%;
-        float: left;
-    }
-    
-    .input__local {
-        width: 40%;
-        float: left;
-        padding-right: 40px;
-    }
-    
-    .input__data {
-        width: 30%;
-        float: left;
-        padding-right: 40px;
-    }
-    
-    .input__hora {
-        width: 30%;
-        float: left;
-    }
-
-}
-
-
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-
-}
-
-
-
-/* Abre Media query Mobile*/
-@media only screen and (max-width: 576px)  {
-
-
-.input__nomeevento {
-    width: 100%;
-}
-
-.input__ministrante {
-    width: 100%;
-    padding-right: 0;
-}
-
-.input__quantidadehoras {
-    width: 100%;
-    float: none;
-    padding-right: 0;
-}
-
-.input__numerovagas {
-    width: 100%;
-    float: none;
-}
-
-.input__local {
-    width: 100%;
-    float: none;
-    padding-right: 0;
-}
-
-.input__data {
-    width: 100%;
-    float: none;
-    padding-right: 0;
-}
-
-.input__hora {
-    width: 100%;
-    float: none;
-}
-
-.enviar {
-    font-size: 12px;
-}
-
-
-
-} /* Fecha Media query Mobile*/

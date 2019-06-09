@@ -16,9 +16,5 @@
 //= require jquery3
 //= require popper
 //= require bootstrap
-//= require bootstrap-datepicker
-//= require bootstrap-datepicker/core
-//= require bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.js
-//= require datelanguage
 //= require_tree .
 

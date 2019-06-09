@@ -1,77 +1,61 @@
-<form class="form pt-1 pb-5">
-  <div class="container container_form">
-    <h1 class="text-center mt-4">Cadastrar Evento</h1>  
+<section id="event__formSection">
+  <div class="container">
 
-    <div class="linha">
-      <div class="form-group campo input__nomeevento mt-5 mb-3">
-          <label for="">Nome do Evento</label>
-          <input type="" class="form-control border border-dark" id="" aria-describedby="" placeholder="Digite o nome do evento">    
+    <hr class="event__line">
+
+    <h2 class="text-center mt-2 pb-3 form__text">Cadastrar Evento</h2>
+
+    <form>
+      <div class="form-row">
+        <div class="col-md-11 mb-3">
+          <label for="name_event" class="form__text">Nome do Evento</label>
+          <input type="text" class="form-control" id="name_event" placeholder="Semana Acadêmica de Sistemas de Informação - 2019"required>
+        </div>
       </div>
 
-    </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="name_ministrant" class="form__text">Ministrante</label>
+          <input type="text" class="form-control" id="name_ministrant" placeholder="Nome do Ministrante"required>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="event_hours_cont" class="form__text">Qtd. Horas</label>
+          <input type="time" class="form-control" id="event_hours_cont" required>
+        </div>
+        <div class="col-md-2 mb-3">
+          <label for="count_positions" class="form__text">Vagas</label>
+          <input type="number" class="form-control" id="count_positions" placeholder="Ex: 50" required>
+        </div>
+      </div>
 
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="event_local" class="form__text">Local</label>
+          <input type="text" class="form-control" id="name_ministrant" placeholder="Ex: Laboratório 05 - Ala Sul"required>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="event_date" class="form__text">Data do Evento</label>
+          <input type="date" class="form-control" id="event_hours_cont" min="01-01-2019" required>
+        </div>
+        <div class="col-md-2 mb-3">
+          <label for="event_start_hour" class="form__text">Horário</label>
+          <input type="time" class="form-control" id="count_positions" required>
+        </div>
+      </div>
 
-    <div class="linha">  
+      <div class="form-row">
+        <div class="col-md-11 mb-3">
+          <label for="event_description" class="form__text">Descrição do Evento</label>
+          <textarea class="form-control form__textArea" id="event_description" rows="4"></textarea>
+        </div>
+      </div>
       
-      <div class="form-group campo input__ministrante">
-          <label for="">Ministrante</label>
-          <input type="" class="form-control border border-dark" id="" aria-describedby="" placeholder="Digite o nome do ministrante">    
+      <div class="form-group">
+        <input class="btn btn-primary form__button" type="submit" value="Enviar">
       </div>
-    
-      <div class="form-group campo input__quantidadehoras">
-          <label for="">Quantidade de horas</label>
-          <input type="" class="form-control border border-dark" id="" aria-describedby="" placeholder="Digite a quantidade de horas">    
-      </div>
-    
-      <div class="form-group campo input__numerovagas">
-          <label for="">Número de vagas</label>
-          <input type="" class="form-control border border-dark" id="" aria-describedby="" placeholder="Quantidades de vagas">    
-      </div>
-
-    </div>
-    
-
-    <div class="linha"> 
-
-      <div class="form-group campo input__local">
-          <label for="">Local</label>
-          <input type="" class="form-control border border-dark" id="" aria-describedby="" placeholder="Cidade e estado, ex: Brasília-DF">    
-      </div>
-
-      <div class="form-group campo input__data">
-          <label class="data" for="">Data</label>
-          <input type="text" class="form-control border border-dark form-control datepicker" readonly="true" id="datepicker" aria-describedby="" placeholder="ex: 12/12/2012" data-provide='datepicker' data-date-format="dd/mm/yyyy">
-       
-      </div>
-
-      <div class="form-group campo input__hora">
-          <label for="">Hora</label>
-          <input type="" class="form-control border border-dark" id="" aria-describedby="" placeholder="ex: 14:30">    
-      </div>
-    
-
-    </div>
-    
-
-    <div class="linha"> 
-
-      <div class="form-group campo">
-          <label for="">Descrição</label>
-          <textarea class="form-control border border-dark" rows="10" id="" aria-describedby="" placeholder="Faça uma descrição sobre o evento"></textarea>
-      </div>
-
-    </div>  
-    
-
-    <div class="linha"> 
-
-      <div class="form-group btn__enviar">
-          <button type="submit" class="btn enviar form-control text-center justify-content-center">Cadastrar</button>        
-      </div>
-
-    </div>  
-
+      
+    </form>
 
   </div>
 
-</form>
+</section>
