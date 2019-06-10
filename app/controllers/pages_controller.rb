@@ -3,4 +3,7 @@ class PagesController < ApplicationController
         render 'login'
     end
 
+    def index        
+    end    
+
 end
