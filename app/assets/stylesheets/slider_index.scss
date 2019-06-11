@@ -1,0 +1,25 @@
+.corSlider_index{
+    background-color: #313131;
+}
+
+.img_index{
+    width: 72em;  
+}
+
+@media (max-width: 1400px) { /*Resolução mobile*/
+    .img_index{
+        width:100%;
+    }
+}
+
+@media (width: 1280px) and (height: 800px){ /*Resolução note 1*/
+    .img_index{
+        width: 72em;
+    }
+}
+
+@media (width: 1200px) and (height: 700px){ /*Resolução note 2*/
+    .img_index{
+        width: 71em;
+    }
+}
