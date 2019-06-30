@@ -1,3 +1,79 @@
+<section id="navbar_RegisterEvent">
+  <nav class="navbar fixed-top navbar-expand-lg container-fluid navbar--color" id="nav">
+    <div class="container">
+      <a class="navbar-brand h2 mb-0" href="#">
+        <%= image_tag "Logo_unieuro.png", class:"navbar__img"%>
+        <span class ="navbar__Title">Eventos</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite" aria-controls="navbarSite" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-navicon"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSite">
+        <ul class="navbar-nav ml-auto navbar__Responsive">
+          <li class="nav-item navbar__Resposive-Item1">
+            <button class="form-inline my-2 my-lg-0	btn btn-outline-light my-2 my-sm-0 navbar__Button" type="submit">User 
+              <a class="fa fa-user fa-lg navbar__fIcon"></a>
+            </button>
+          </li>
+
+          <p class="navbar__LineSeparator d-none d-xl-block d-lg-block">|</p>
+
+          <li class="nav-item navbar__Resposive-Item2">
+            <button class="form-inline my-2 my-lg-0	btn btn-outline-light my-2 my-sm-0 navbar__Button" type="submit">Sair
+              <a class="fa fa-sign-out fa-lg navbar__fIcon"></a>
+            </button>
+          </li>     
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+<section class="corBackground_index mt-5">
+  <div class="corSlider_index">
+  <div class="container">
+    <div class="row">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner center-block">
+
+            <div class="carousel-item active">
+              <%= image_tag 'slide_index1080.jpg', class: 'img_index'%>
+            </div>
+
+            <div class="carousel-item">
+              <%= image_tag 'slide_index1080.jpg', class: 'img_index'%>
+            </div>
+
+            <div class="carousel-item">
+              <%= image_tag 'slide_index1080.jpg', class: 'img_index'%>
+            </div>
+
+          </div>
+
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section>
     
     <div class="container">        
         <div class="col text-center">
@@ -119,3 +195,36 @@
         </div>
     </div>
 </section>   
+
+<section id="footer_registerEvent">
+    <div class="footer__backgroud">
+        <div class="container footer__container">
+            <div class="flex-item">
+                <%= image_tag "unieuro_branca.svg", class:"footer__unieuroLogo" %>
+            </div>
+
+            <div class="flex-item mobile">        
+                <a href="https://www.facebook.com/7sightjr/" target="_blank">
+                    <%= image_tag "facebook.svg",  class:"footer__iconSize" %>
+                </a>
+                <a href="https://twitter.com/7sightJr" target="_blank">
+                    <%= image_tag "twitter.svg",  class:"footer__iconSize" %>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <%= image_tag "youtube.svg", class:"footer__iconSize" %>
+                </a>
+                <a href="https://www.instagram.com/7sightjr/" target="_blank">
+                    <%= image_tag "instagram.svg", class:"footer__iconSize" %>
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <div class="footer__textbox">
+                    <h5 class="footer__text">Central de Atendimento</h5>
+                    <h2 class="footer__text footer__text--size">4020 7525</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

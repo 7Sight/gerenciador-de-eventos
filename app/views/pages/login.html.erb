@@ -1,40 +1,42 @@
 
+<div class="login__background">
 <header>
     <nav class="navbar  navbar-light bg-light navbar-right nav--color">
         <a class="navbar-brand nav__font">Gerenciador de Eventos</a>
     </nav>
 </header>
-<div class="container container__flex rounded">
-    <div class="row">
-        <div class="col-sm-12">
-            <header class="loginHeader">
-                <%= image_tag("Logo_unieuroo.png", :alt => "Logo Unieuro", class:"imageLogin") %>
-            </header>
-            <form>
-                <div class="form-group">
-                    <label class="form__text" for="CPD">CPD:</label>
-                    <input type="number" class="rounded form-control" id="CPDLogin" placeholder="Ex: 39825">
-                </div>
-                <div class="form-group">
-                    <label class="form__text" for="exampleInputPassword1">Senha:</label>
-                    <input type="password" class="rounded form-control" id="SenhaLogin">
-                </div>
-                <div class="form-group">
-                    <label class= "rounded form__text" for="exampleFormControlSelect1">Tipo de login</label>
-                    <select class="form-control" id="Atribuicao" placeholder="Password">
-                        <option value="" disabled selected hidden>Aluno, Funcionário, ...</option>
-                        <option>Aluno</option>
-                        <option>Funcionário</option>
-                        <option>Professor</option>
-                    </select>
-                </div>
-                <div class="container--align"> 
-                    <a href=# title="Clique aqui caso tenha esquecido sua senha!">Esqueceu sua senha?</a>
-                    <div class = "form__padButton">
-                        <button type="submit" class="btn btn-primary btn--color">ENTRAR</button>
+    <div class="container container__flex rounded">
+        <div class="row">
+            <div class="col-sm-12">
+                <header class="loginHeader">
+                    <%= image_tag("Logo_unieuroo.png", :alt => "Logo Unieuro", class:"imageLogin") %>
+                </header>
+                <form>
+                    <div class="form-group">
+                        <label class="form__text" for="CPD">CPD:</label>
+                        <input type="number" class="rounded form-control" id="CPDLogin" placeholder="Ex: 39825">
                     </div>
-                </div>
-            </form>
+                    <div class="form-group">
+                        <label class="form__text" for="exampleInputPassword1">Senha:</label>
+                        <input type="password" class="rounded form-control" id="SenhaLogin">
+                    </div>
+                    <div class="form-group">
+                        <label class= "rounded form__text" for="exampleFormControlSelect1">Tipo de login</label>
+                        <select class="form-control" id="Atribuicao" placeholder="Password">
+                            <option value="" disabled selected hidden>Aluno, Funcionário, ...</option>
+                            <option>Aluno</option>
+                            <option>Funcionário</option>
+                            <option>Professor</option>
+                        </select>
+                    </div>
+                    <div class="container--align"> 
+                        <a href=# title="Clique aqui caso tenha esquecido sua senha!">Esqueceu sua senha?</a>
+                        <div class = "form__padButton">
+                            <button type="submit" class="btn btn-primary btn--color">ENTRAR</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>

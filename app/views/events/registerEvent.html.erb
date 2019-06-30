@@ -1,0 +1,130 @@
+<section id="navbar_RegisterEvent">
+  <nav class="navbar fixed-top navbar-expand-lg container-fluid navbar--color" id="nav">
+    <div class="container">
+      <a class="navbar-brand h2 mb-0" href="#">
+        <%= image_tag "Logo_unieuro.png", class:"navbar__img"%>
+        <span class ="navbar__Title">Eventos</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite" aria-controls="navbarSite" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-navicon"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSite">
+        <ul class="navbar-nav ml-auto navbar__Responsive">
+          <li class="nav-item navbar__Resposive-Item1">
+            <button class="form-inline my-2 my-lg-0	btn btn-outline-light my-2 my-sm-0 navbar__Button" type="submit">User 
+              <a class="fa fa-user fa-lg navbar__fIcon"></a>
+            </button>
+          </li>
+
+          <p class="navbar__LineSeparator d-none d-xl-block d-lg-block">|</p>
+
+          <li class="nav-item navbar__Resposive-Item2">
+            <button class="form-inline my-2 my-lg-0	btn btn-outline-light my-2 my-sm-0 navbar__Button" type="submit">Sair
+              <a class="fa fa-sign-out fa-lg navbar__fIcon"></a>
+            </button>
+          </li>     
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+<section id="event__formSection">
+  <div class="container">
+
+    <hr class="event__line">
+
+    <h2 class="text-center mt-2 pb-3 form__text">Cadastrar Evento</h2>
+
+    <%= form_with scope: :events, url: events_path, local: true do |f| %>
+
+      <div class="form-row">
+            <div class="col-md-11 mb-3">
+                <%= f.label :Nome_do_Evento, :class => "form__text" %>
+                <%= f.text_field :event_name, placeholder: "Semana Acadêmica de Sistemas de Informação - 2019", :class => "form-control", :required => true %>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <%= f.label :Ministrante, :class => "form__text" %>
+                <%= f.text_field :event_ministrant, placeholder: "Nome completo do Ministrante", :class => "form-control", :required => true %>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <%= f.label :Créditos, :class => "form__text" %>
+                <%= f.text_field :event_credits, :class => "form-control", placeholder: "Ex: 10h Complementares", :required => true %>
+            </div>
+
+            <div class="col-md-2 mb-3">
+                <%= f.label :Vagas, :class => "form__text" %>
+                <%= f.number_field :event_slots, placeholder: "Ex: 50 Vagas", :class => "form-control", :required => true %>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <%= f.label :Local, :class => "form__text" %>
+                <%= f.text_field :event_local, placeholder: "Ex: Laboratório 05 - Bloco D", :class => "form-control", :required => true %>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <%= f.label :Data_do_Evento, :class => "form__text" %>
+                <%= f.text_field :event_date, :class => "form-control", placeholder: "Ex: 21/07/2019", :required => true  %>
+            </div>
+
+            <div class="col-md-2 mb-3">
+                <%= f.label :Horário, :class => "form__text" %>
+                <%= f.text_field :event_hour, :class => "form-control", placeholder: "Ex: 19h às 23h", :required => true %>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-11 mb-3">
+                <%= f.label :Descrição_do_Evento, :class => "form__text" %>
+                <%= f.text_area :event_description, placeholder: "Ex: 3° Semana Acadêmica de Sistemas de Informação - Organização 7Sight", :class => "form-control form__textArea", :required => true, :rows => 9%>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <%= f.submit class: "btn btn-primary form__button", value:  "Enviar" %>
+        </div>
+
+    <% end %>
+  </div>
+</section>
+
+<section id="footer_registerEvent">
+    <div class="footer__backgroud">
+        <div class="container footer__container">
+            <div class="flex-item">
+                <%= image_tag "unieuro_branca.svg", class:"footer__unieuroLogo" %>
+            </div>
+
+            <div class="flex-item mobile">        
+                <a href="https://www.facebook.com/7sightjr/" target="_blank">
+                    <%= image_tag "facebook.svg",  class:"footer__iconSize" %>
+                </a>
+                <a href="https://twitter.com/7sightJr" target="_blank">
+                    <%= image_tag "twitter.svg",  class:"footer__iconSize" %>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <%= image_tag "youtube.svg", class:"footer__iconSize" %>
+                </a>
+                <a href="https://www.instagram.com/7sightjr/" target="_blank">
+                    <%= image_tag "instagram.svg", class:"footer__iconSize" %>
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <div class="footer__textbox">
+                    <h5 class="footer__text">Central de Atendimento</h5>
+                    <h2 class="footer__text footer__text--size">4020 7525</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

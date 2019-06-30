@@ -1,0 +1,117 @@
+<section id="navbar_RegisterEvent">
+  <nav class="navbar fixed-top navbar-expand-lg container-fluid navbar--color" id="nav">
+    <div class="container">
+      <a class="navbar-brand h2 mb-0" href="#">
+        <%= image_tag "Logo_unieuro.png", class:"navbar__img"%>
+        <span class ="navbar__Title">Eventos</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite" aria-controls="navbarSite" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-navicon"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSite">
+        <ul class="navbar-nav ml-auto navbar__Responsive">
+          <li class="nav-item navbar__Resposive-Item1">
+            <button class="form-inline my-2 my-lg-0	btn btn-outline-light my-2 my-sm-0 navbar__Button" type="submit">User 
+              <a class="fa fa-user fa-lg navbar__fIcon"></a>
+            </button>
+          </li>
+
+          <p class="navbar__LineSeparator d-none d-xl-block d-lg-block">|</p>
+
+          <li class="nav-item navbar__Resposive-Item2">
+            <button class="form-inline my-2 my-lg-0	btn btn-outline-light my-2 my-sm-0 navbar__Button" type="submit">Sair
+              <a class="fa fa-sign-out fa-lg navbar__fIcon"></a>
+            </button>
+          </li>     
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+<br>
+<br>
+<br>
+<br>
+
+<p>
+  <strong>Nome do Evento:</strong>
+  <%= @events.event_name %>
+</p>
+ 
+<p>
+  <strong>Ministrante:</strong>
+  <%= @events.event_ministrant %>
+</p>
+
+<p>
+  <strong>Créditos Complementares:</strong>
+  <%= @events.event_credits %>
+</p>
+
+<p>
+  <strong>Vagas Disponíveis:</strong>
+  <%= @events.event_slots %>
+</p>
+
+<p>
+  <strong>Local do Evento:</strong>
+  <%= @events.event_local %>
+</p>
+
+<p>
+  <strong>Data do Evento:</strong>
+  <%= @events.event_date %>
+</p>
+
+<p>
+  <strong>Hora do Evento:</strong>
+  <%= @events.event_hour %>
+</p>
+
+<p>
+  <strong>Descrição do Evento:</strong>
+  <%= @events.event_description %>
+</p>
+
+
+
+
+
+
+
+
+<section id="footer_registerEvent">
+    <div class="footer__backgroud">
+        <div class="container footer__container">
+            <div class="flex-item">
+                <%= image_tag "unieuro_branca.svg", class:"footer__unieuroLogo" %>
+            </div>
+
+            <div class="flex-item mobile">        
+                <a href="https://www.facebook.com/7sightjr/" target="_blank">
+                    <%= image_tag "facebook.svg",  class:"footer__iconSize" %>
+                </a>
+                <a href="https://twitter.com/7sightJr" target="_blank">
+                    <%= image_tag "twitter.svg",  class:"footer__iconSize" %>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <%= image_tag "youtube.svg", class:"footer__iconSize" %>
+                </a>
+                <a href="https://www.instagram.com/7sightjr/" target="_blank">
+                    <%= image_tag "instagram.svg", class:"footer__iconSize" %>
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <div class="footer__textbox">
+                    <h5 class="footer__text">Central de Atendimento</h5>
+                    <h2 class="footer__text footer__text--size">4020 7525</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
