@@ -72,12 +72,12 @@
 
             <div class="col-md-3 mb-3">
                 <%= f.label :Data_do_Evento, :class => "form__text" %>
-                <%= f.text_field :event_date, :class => "form-control", placeholder: "Ex: 21/07/2019", :required => true  %>
+                <%= f.date_field :event_date, :class => "form-control", placeholder: "Ex: 21/07/2019", :required => true %>
             </div>
 
             <div class="col-md-2 mb-3">
                 <%= f.label :Horário, :class => "form__text" %>
-                <%= f.text_field :event_hour, :class => "form-control", placeholder: "Ex: 19h às 23h", :required => true %>
+                <%= f.time_field :event_hour, :class => "form-control", placeholder: "Ex: 19h às 23h", :required => true %>
             </div>
         </div>
 

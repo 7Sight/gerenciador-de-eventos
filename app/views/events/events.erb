@@ -83,14 +83,15 @@
 
         <div class="row">
 
-            <% @events.each do |events| %>
+            <% @events.order("event_date asc").each do |events| %>
 
             <div class="col-sm-4 mt-4">
                 <div class="col-sm-12 bg-white rounded border shadow">
                     <div class="dataBackground_index rounded mt-3">
                         <h2 class="titles_index"><%= events.event_date %></h2>
                     </div>
-                    <p class="text-justify mt-2"><strong>Descrição do evento: </strong><%= events.event_description %></p>
+                    <p class="text-center mt-2"><strong><%= events.event_name %></p></strong>
+                    <p class="text-justify mt-2"><%= events.event_description %></p>
                     <div class="col text-center">
                         <button type="button" class="btn btnEventos_index mb-2"><%= link_to 'Informações', (event_path(events)), class: "form__button" %></button>
                     </div>    
