@@ -1,7 +1,7 @@
 <section id="navbar_RegisterEvent">
   <nav class="navbar fixed-top navbar-expand-lg container-fluid navbar--color" id="nav">
     <div class="container">
-      <a class="navbar-brand h2 mb-0" href="#">
+      <a class="navbar-brand h2 mb-0" href="/events">
         <%= image_tag "Logo_unieuro.png", class:"navbar__img"%>
         <span class ="navbar__Title">Eventos</span>
       </a>
@@ -80,115 +80,25 @@
             <hr class="event__line">
             <h2 class="titles_index">Próximos Eventos</h2>
         </div>
+
         <div class="row">
+
+            <% @events.each do |events| %>
+
             <div class="col-sm-4 mt-4">
                 <div class="col-sm-12 bg-white rounded border shadow">
                     <div class="dataBackground_index rounded mt-3">
-                        <h2 class="titles_index">24/03</h2>
+                        <h2 class="titles_index"><%= events.event_date %></h2>
                     </div>
-                    <p class="text-justify mt-2"><strong>Descrição do evento: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar, nunc non interdum faucibus, magna dolor elementum purus, a rutrum lacus sem quis dolor. Fusce.</p>
+                    <p class="text-justify mt-2"><strong>Descrição do evento: </strong><%= events.event_description %></p>
                     <div class="col text-center">
-                        <button type="button" class="btn btnEventos_index mb-2">+Info</button>
+                        <button type="button" class="btn btnEventos_index mb-2"><%= link_to 'Informações', (event_path(events)), class: "form__button" %></button>
                     </div>    
                 </div>
             </div>
 
-            <div class="col-sm-4 mt-4">
-                <div class="col-sm-12 bg-white rounded border shadow">
-                    <div class="dataBackground_index rounded mt-3">
-                        <h2 class="titles_index">26/03</h2>
-                    </div>
-                    <p class="text-justify mt-2"><strong>Descrição do evento: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar, nunc non interdum faucibus, magna dolor elementum purus, a rutrum lacus sem quis dolor. Fusce.</p>
-                    <div class="col text-center">
-                        <button type="button" class="btn btnEventos_index mb-2">+Info</button>
-                    </div> 
-                </div>
-            </div>
+            <% end %>
 
-            <div class="col-sm-4 mt-4">
-                <div class="col-sm-12 bg-white rounded border shadow">
-                    <div class="dataBackground_index rounded mt-3">
-                        <h2 class="titles_index">27/03</h2>
-                    </div>
-                    <p class="text-justify mt-2"><strong>Descrição do evento: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar, nunc non interdum faucibus, magna dolor elementum purus, a rutrum lacus sem quis dolor. Fusce.</p>
-                    <div class="col text-center">
-                        <button type="button" class="btn btnEventos_index mb-2">+Info</button>
-                    </div> 
-                </div>
-            </div>
-            
-            <div class="col-sm-4 mt-4">
-                <div class="col-sm-12 bg-white rounded border shadow">
-                    <div class="dataBackground_index rounded mt-3">
-                        <h2 class="titles_index">27/03</h2>
-                    </div>
-                    <p class="text-justify mt-2"><strong>Descrição do evento: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar, nunc non interdum faucibus, magna dolor elementum purus, a rutrum lacus sem quis dolor. Fusce.</p>
-                    <div class="col text-center">
-                        <button type="button" class="btn btnEventos_index mb-2">+Info</button>
-                    </div> 
-                </div>
-            </div>
-
-            <div class="col-sm-4 mt-4">
-                <div class="col-sm-12 bg-white rounded border shadow">
-                    <div class="dataBackground_index rounded mt-3">
-                        <h2 class="titles_index">29/03</h2>
-                    </div>
-                    <p class="text-justify mt-2"><strong>Descrição do evento: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar, nunc non interdum faucibus, magna dolor elementum purus, a rutrum lacus sem quis dolor. Fusce.</p>
-                    <div class="col text-center">
-                        <button type="button" class="btn btnEventos_index mb-2">+Info</button>
-                    </div> 
-                </div>
-            </div>
-
-            <div class="col-sm-4 mt-4">
-                <div class="col-sm-12 bg-white rounded border shadow">
-                    <div class="dataBackground_index rounded mt-3">
-                        <h2 class="titles_index">30/03</h2>
-                    </div>
-                    <p class="text-justify mt-2"><strong>Descrição do evento: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar, nunc non interdum faucibus, magna dolor elementum purus, a rutrum lacus sem quis dolor. Fusce.</p>
-                    <div class="col text-center">
-                        <button type="button" class="btn btnEventos_index mb-2">+Info</button>
-                    </div> 
-                </div>
-            </div>
-
-            <div class="col-sm-4 mt-4">
-                <div class="col-sm-12 bg-white rounded border shadow">
-                    <div class="dataBackground_index rounded mt-3">
-                        <h2 class="titles_index">02/04</h2>
-                    </div>
-                    <p class="text-justify mt-2"><strong>Descrição do evento: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar, nunc non interdum faucibus, magna dolor elementum purus, a rutrum lacus sem quis dolor. Fusce.</p>
-                    <div class="col text-center">
-                        <button type="button" class="btn btnEventos_index mb-2">+Info</button>
-                    </div> 
-                </div>
-            </div>
-
-            <div class="col-sm-4 mt-4">
-                <div class="col-sm-12 bg-white rounded border shadow">
-                    <div class="dataBackground_index rounded mt-3">
-                        <h2 class="titles_index">06/04</h2>
-                    </div>
-                    <p class="text-justify mt-2"><strong>Descrição do evento: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar, nunc non interdum faucibus, magna dolor elementum purus, a rutrum lacus sem quis dolor. Fusce.</p>
-                    <div class="col text-center">
-                        <button type="button" class="btn btnEventos_index mb-2">+Info</button>
-                    </div> 
-                </div>
-            </div>
-
-            <div class="col-sm-4 mt-4">
-                <div class="col-sm-12 bg-white rounded border shadow">
-                    <div class="dataBackground_index rounded mt-3">
-                        <h2 class="titles_index">12/04</h2>
-                    </div>
-                    <p class="text-justify mt-2"><strong>Descrição do evento: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar, nunc non interdum faucibus, magna dolor elementum purus, a rutrum lacus sem quis dolor. Fusce.</p>
-                    <div class="col text-center">
-                        <button type="button" class="btn btnEventos_index mb-2">+Info</button>
-                    </div> 
-                </div>
-            </div>
-            
         </div>
         <div class="col text-center">
             <button type="button" class="btn btn-light mb-5 mt-5 shadow">Next</button>

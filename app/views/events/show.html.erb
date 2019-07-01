@@ -1,7 +1,7 @@
 <section id="navbar_RegisterEvent">
   <nav class="navbar fixed-top navbar-expand-lg container-fluid navbar--color" id="nav">
     <div class="container">
-      <a class="navbar-brand h2 mb-0" href="#">
+      <a class="navbar-brand h2 mb-0" href="/events">
         <%= image_tag "Logo_unieuro.png", class:"navbar__img"%>
         <span class ="navbar__Title">Eventos</span>
       </a>
@@ -37,25 +37,25 @@
         <h2 class="text-center mt-2 pb-3 form__text">Evento</h2>
 
         <h6 class="showEvents__text">Nome do Evento</h6>
-        <h3 class="showEvents__text--description"><%= @events.event_name %></h3>
+        <h3 class="showEvents__text--description"><%= @event.event_name %></h3>
 
         <h6 class="showEvents__text">Ministrante</h6>
-        <h4 class="showEvents__text--description"><%= @events.event_ministrant %></h4>
+        <h4 class="showEvents__text--description"><%= @event.event_ministrant %></h4>
 
         <h6 class="showEvents__text">Local do Evento</h6>
-        <h4 class="showEvents__text--description"><%= @events.event_local %></h4>
+        <h4 class="showEvents__text--description"><%= @event.event_local %></h4>
 
         <h6 class="showEvents__text">Data do Evento</h6>
-        <h4 class="showEvents__text--description"><%= @events.event_date %></h4>
+        <h4 class="showEvents__text--description"><%= @event.event_date %></h4>
 
         <h6 class="showEvents__text">Horário do Evento</h6>
-        <h4 class="showEvents__text--description"><%= @events.event_hour %></h4>
+        <h4 class="showEvents__text--description"><%= @event.event_hour %></h4>
 
         <h6 class="showEvents__text">Vagas disponíveis</h6>
-        <h4 class="showEvents__text--description"><%= @events.event_slots %></h4>
+        <h4 class="showEvents__text--description"><%= @event.event_slots %></h4>
         
         <h6 class="showEvents__text">Descrição do Evento</h6>
-        <h6 class="showEvents__text--description"><%= @events.event_description %></h6>
+        <h6 class="showEvents__text--description"><%= @event.event_description %></h6>
 
         <button type="button" class="btn btn-primary showEvents__button">Inscrever-se</button>
         

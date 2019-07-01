@@ -1,10 +1,11 @@
 class EventsController < ApplicationController
     def index
+        @events = Event.all
         render 'events'
     end
 
     def show
-        @events = Event.find(params[:id])
+        @event = Event.find(params[:id])
     end
 
     def new
@@ -12,10 +13,10 @@ class EventsController < ApplicationController
     end
 
     def create
-        @events = Event.new(event_params)
+        @event = Event.new(event_params)
  
-        @events.save
-        redirect_to @events
+        @event.save
+        redirect_to @event
     end
 
     private 

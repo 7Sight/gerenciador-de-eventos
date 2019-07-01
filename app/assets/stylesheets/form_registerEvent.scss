@@ -19,7 +19,7 @@
 
 .form__button{
     color: white!important;
-    background: #004085;
+    background: #004085!important;
     border: none!important;
 }
 
@@ -29,4 +29,8 @@
 
 #event__formSection{
     padding-top: 50px;
+}
+
+.form__button:hover{
+    text-decoration: none!important;
 }
