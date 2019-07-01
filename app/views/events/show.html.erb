@@ -31,57 +31,36 @@
   </nav>
 </section>
 
-<br>
-<br>
-<br>
-<br>
+<section id="showEvents">
+    <div class="container">
+        <hr class="event__line">
+        <h2 class="text-center mt-2 pb-3 form__text">Evento</h2>
 
-<p>
-  <strong>Nome do Evento:</strong>
-  <%= @events.event_name %>
-</p>
- 
-<p>
-  <strong>Ministrante:</strong>
-  <%= @events.event_ministrant %>
-</p>
+        <h6 class="showEvents__text">Nome do Evento</h6>
+        <h3 class="showEvents__text--description"><%= @events.event_name %></h3>
 
-<p>
-  <strong>Créditos Complementares:</strong>
-  <%= @events.event_credits %>
-</p>
+        <h6 class="showEvents__text">Ministrante</h6>
+        <h4 class="showEvents__text--description"><%= @events.event_ministrant %></h4>
 
-<p>
-  <strong>Vagas Disponíveis:</strong>
-  <%= @events.event_slots %>
-</p>
+        <h6 class="showEvents__text">Local do Evento</h6>
+        <h4 class="showEvents__text--description"><%= @events.event_local %></h4>
 
-<p>
-  <strong>Local do Evento:</strong>
-  <%= @events.event_local %>
-</p>
+        <h6 class="showEvents__text">Data do Evento</h6>
+        <h4 class="showEvents__text--description"><%= @events.event_date %></h4>
 
-<p>
-  <strong>Data do Evento:</strong>
-  <%= @events.event_date %>
-</p>
+        <h6 class="showEvents__text">Horário do Evento</h6>
+        <h4 class="showEvents__text--description"><%= @events.event_hour %></h4>
 
-<p>
-  <strong>Hora do Evento:</strong>
-  <%= @events.event_hour %>
-</p>
+        <h6 class="showEvents__text">Vagas disponíveis</h6>
+        <h4 class="showEvents__text--description"><%= @events.event_slots %></h4>
+        
+        <h6 class="showEvents__text">Descrição do Evento</h6>
+        <h6 class="showEvents__text--description"><%= @events.event_description %></h6>
 
-<p>
-  <strong>Descrição do Evento:</strong>
-  <%= @events.event_description %>
-</p>
-
-
-
-
-
-
-
+        <button type="button" class="btn btn-primary showEvents__button">Inscrever-se</button>
+        
+    </div>
+</section>
 
 <section id="footer_registerEvent">
     <div class="footer__backgroud">
@@ -107,7 +86,7 @@
 
             <div class="flex-item">
                 <div class="footer__textbox">
-                    <h5 class="footer__text">Central de Atendimento</h5>
+                    <h6 class="footer__text">Central de Atendimento</h6>
                     <h2 class="footer__text footer__text--size">4020 7525</h2>
                 </div>
             </div>
