@@ -24,3 +24,5 @@ production:
    <<: *default
    adapter: postgresql
    database: db/production.sqlite3
+   username: vnqzvzjjvdoyob
+   password: 995783d1d5e4d8f9011c4d483b65b75b33509c96255ac2f871df7bdf61bc6c60
