@@ -1,5 +1,5 @@
 body{
-    background-image: url('big-city.jpg');
+    background-color: #efebeb; /*cor de fundo padrão para todas as outras telas */
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
@@ -35,6 +35,14 @@ input[type=number]::-webkit-outer-spin-button {
 
     .inputLogin__color{
         border-color: black;
+    }
+    
+    .backgLogin{ /*background da tela de login */
+        background-image: url('bg_login.png');
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;        
     }    
 
     @media (max-width: 576px) {
