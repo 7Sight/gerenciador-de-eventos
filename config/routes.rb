@@ -3,5 +3,7 @@ Rails.application.routes.draw do
   root 'pages#login'
   get 'cadastrarEvento', to: 'pages#registerEvent'
   get 'eventos', to: 'pages#index'
+  get 'meusCertificados', to:'pages#myCertificates'
+  get 'meusEventos', to: 'pages#myEvents'
 
 end

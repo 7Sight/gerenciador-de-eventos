@@ -1,7 +1,7 @@
 <section id="navbar_RegisterEvent">
   <nav class="navbar fixed-top navbar-expand-lg container-fluid navbar--color" id="nav">
     <div class="container">
-      <a class="navbar-brand h2 mb-0" href="#">
+      <a href="/eventos" class="navbar-brand h2 mb-0" href="#">
         <%= image_tag "Logo_unieuro.png", class:"navbar__img"%>
         <span class ="navbar__Title">Eventos</span>
       </a>
@@ -17,18 +17,20 @@
               <button class="form-inline my-2 my-lg-0	btn btn-outline-light my-2 my-sm-0 navbar__Button dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User 
                 <a class="fa fa-user fa-lg navbar__fIcon"></a>
               </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Meus Certificados</a>
-                <a class="dropdown-item" href="#">Meus Eventos</a>                
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">            
+                <%= link_to "Meus Certificados", "meusCertificados", :class => "dropdown-item" %>
+                <%= link_to "Meus Eventos", "meusEventos", :class => "dropdown-item" %>
               </div>
             </div>
           </li>
           <p class="navbar__LineSeparator d-none d-xl-block d-lg-block">|</p>
 
           <li class="nav-item navbar__Resposive-Item2">
-            <button class="form-inline my-2 my-lg-0	btn btn-outline-light my-2 my-sm-0 navbar__Button" type="submit">Sair
-              <a class="fa fa-sign-out fa-lg navbar__fIcon"></a>
-            </button>
+            <a href="/">
+              <button class="form-inline my-2 my-lg-0	btn btn-outline-light my-2 my-sm-0 navbar__Button" type="submit">Sair
+                <div class="fa fa-sign-out fa-lg navbar__fIcon"></div>
+              </button>
+            </a>
           </li>     
         </ul>
       </div>
