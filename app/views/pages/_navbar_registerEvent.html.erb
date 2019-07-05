@@ -12,12 +12,17 @@
 
       <div class="collapse navbar-collapse" id="navbarSite">
         <ul class="navbar-nav ml-auto navbar__Responsive">
-          <li class="nav-item navbar__Resposive-Item1">
-            <button class="form-inline my-2 my-lg-0	btn btn-outline-light my-2 my-sm-0 navbar__Button" type="submit">User 
-              <a class="fa fa-user fa-lg navbar__fIcon"></a>
-            </button>
+          <li class="nav-item navbar__Resposive-Item1">            
+            <div class="dropdown">
+              <button class="form-inline my-2 my-lg-0	btn btn-outline-light my-2 my-sm-0 navbar__Button dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User 
+                <a class="fa fa-user fa-lg navbar__fIcon"></a>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Meus Certificados</a>
+                <a class="dropdown-item" href="#">Meus Eventos</a>                
+              </div>
+            </div>
           </li>
-
           <p class="navbar__LineSeparator d-none d-xl-block d-lg-block">|</p>
 
           <li class="nav-item navbar__Resposive-Item2">
