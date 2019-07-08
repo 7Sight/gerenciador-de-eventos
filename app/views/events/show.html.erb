@@ -46,7 +46,7 @@
         <h4 class="showEvents__text--description"><%= @event.event_local %></h4>
 
         <h6 class="showEvents__text">Data do Evento</h6>
-        <h4 class="showEvents__text--description"><%= @event.event_date %></h4>
+        <h4 class="showEvents__text--description"><%= Date.parse(@event.event_date).strftime("%d/%m/%Y")%></h4>
 
         <h6 class="showEvents__text">Horário do Evento</h6>
         <h4 class="showEvents__text--description"><%= @event.event_hour %></h4>
