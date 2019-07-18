@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'pages#login'
 
   resources :events
-
+  get 'meusCertificados', to:'pages#myCertificates'
+  get 'meusEventos', to: 'pages#myEvents'
   
 end
