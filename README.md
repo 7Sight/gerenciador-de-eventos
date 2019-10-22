@@ -1,5 +1,11 @@
 # README
 
+Projeto Gerenciador de Eventos
+Cliente: Unieuro
+Ano: 2019/2020
+
+---
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
